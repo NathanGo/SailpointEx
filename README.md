@@ -47,6 +47,8 @@ using terminal/cmd, from the location there is package.json file
 
     Implementaion of OnDestroy for unsibscribe and prevent memory leak 
     Implementation of OnChanges for catch changes of Input in sp-grid.component
+    Screenshot folder contains the screenshot of project structure and finished screen 
+    
     
 
 ##############################################################################################
