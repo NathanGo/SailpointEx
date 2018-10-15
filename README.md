@@ -16,18 +16,17 @@ using terminal/cmd, from the location there is package.json file
 
 ## Structure of Project
 
-## app.component - the main component with  <router-outlet></router-outlet>
-
-## file-types folder contains
-
-## components folder - there is 3 components: 
+## app.component - the main component with router-outlet
+ 
+## file-types folder contains 3 components and  1 service : 
 
     file-types.component that split the screen to 2  wrapped two another components (files.component, folder components)
     folder components -  the tree of folders component
-    files.component - grid with pagination and checkbox of deleted files (note, pagination appears only if 2 pages exists)
+    files.component - grid with pagination and checkbox of deleted files 
+    (note, pagination appears only if 2 pages exists, it can be checked by selecting "Folder A.1" with show deleted files checkbox checked  )
     
     
-## services folder - there is service that retrieve the data from source (json files, it could be change to api), 
+    services folder - there is service that retrieve the data from source (json files, it could be change to api), 
     there is EventEmmiter, Subject implementaion for Event , Observer/Observable
 
 ## shared folder - contains 2 components : 
@@ -50,7 +49,7 @@ using terminal/cmd, from the location there is package.json file
     OnChanges implementation  for catch chnges of Input in sp-grid.component
     
 
-########################################################################################################################################
+##############################################################################################
 
 
 
@@ -78,8 +77,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-#####################################################################################################################################
-
+################################################################################
 
 
 
