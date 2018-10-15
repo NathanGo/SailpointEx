@@ -35,8 +35,8 @@ using terminal/cmd, from the location there is package.json file
  
  
  
-## assets folder - contains  2 folders
-    images - folder image , open folder image  for tree creation
+## assets folder - contains 2 folders
+    images - folder image , open folder image,  for tree creation
     resources - json files 
     
 
@@ -45,8 +45,8 @@ using terminal/cmd, from the location there is package.json file
     
 ## Others
 
-    OnDestroy  implementaion for unsibscribe and prevent memory leak 
-    OnChanges implementation  for catch chnges of Input in sp-grid.component
+    Implementaion of OnDestroy for unsibscribe and prevent memory leak 
+    Implementation of OnChanges for catch changes of Input in sp-grid.component
     
 
 ##############################################################################################
