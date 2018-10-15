@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import '~angular-tree-component/dist/angular-tree-component.css'; 
+
+  
+  /*------------------------------------*/
+  
+  .toggle-children {
+    background-image:url("./assets/images/plus.png");
+    display: inline-block;
+      font-style: normal;
+      vertical-align: middle;
+      height: 11px;
+      width: 11px;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      text-align: center;
+      text-align: center;
+      border: 1px solid #8BAEBF;
+      line-height: 10px;
+      background-color: #FFF;
+      position: relative;
+      z-index: 2;
+  }
+  
+  .toggle-children-wrapper-expanded .toggle-children {
+      background-image:url("./assets/images/minus.png");
+      transform: rotate(0deg)
+  }
+
+
