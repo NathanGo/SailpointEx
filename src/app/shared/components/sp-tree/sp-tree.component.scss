@@ -35,3 +35,12 @@ $paddingLeft: 30%;
     width: $nodeWidth;
 }
 
+.node-content-wrapper-active:hover{
+    background-image: url("../../../../assets/images/opened_folder.png");
+    background-repeat: no-repeat;
+    background-size: $folderIconWidth $folderIconHeight;
+    background-position-x: $folderIconPositionX;
+    background-position-y: $folderIconPositionY;
+    width: $nodeWidth;
+}
+
