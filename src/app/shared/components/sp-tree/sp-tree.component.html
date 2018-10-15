@@ -1,0 +1,20 @@
+<tree-root  #tree 
+            (initialized)="activateFirstNode()"
+            [nodes]="nodes"
+            [options]="options"
+            (activate)="nodeActivated($event)">
+    <ng-template #treeNodeWrapperTemplate let-node let-index="index">
+            <div class="node-wrapper " [style.padding-left]="node.getNodePadding()">
+                    <tree-node-expander [node]="node"></tree-node-expander>
+                    <div class="node-content-wrapper"
+                      [class.node-content-wrapper-active]="node.isActive"
+                      [class.node-content-wrapper-focused]="node.isFocused"
+                      (click)="node.mouseAction('click', $event)">
+                      
+                       <span>{{node.data.name}}</span>
+                      
+                    </div>
+            </div>
+         
+    </ng-template>
+</tree-root>   

@@ -1,0 +1,13 @@
+<div *ngIf="selectedNode" class="mt-2" > 
+        <div class="row mt-3 mb-2">
+                <div class="col-sm-3 "  >
+                        Show Deleted Files
+                        <input type="checkbox" [(ngModel)]="isDeletedChecked" name="isDeleted" id="isDeleted" (change)="onIsDeletedChecked($event)">
+                        
+                </div>
+        </div>
+        <sp-grid [dataSet]="data" [cols]="columns"></sp-grid>
+</div>
+<div *ngIf="fileErrorMsg" >
+        {{fileErrorMsg}}
+</div>

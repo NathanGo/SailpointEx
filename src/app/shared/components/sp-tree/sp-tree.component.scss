@@ -1,0 +1,37 @@
+
+$folderIconWidth:25px;
+$folderIconHeight:20px;
+
+$folderIconPositionX:10%;
+$folderIconPositionY:37%;
+
+$nodeWidth: 80%;
+$paddingLeft: 30%;
+
+
+
+
+
+.node-content-wrapper{
+    background-image: url("../../../../assets/images/folder.png");
+    background-repeat: no-repeat;
+    background-size: $folderIconWidth $folderIconHeight;
+    background-position-x: $folderIconPositionX;
+    background-position-y: $folderIconPositionY;
+    width: $nodeWidth;
+}
+    
+.node-content-wrapper > span{
+    padding-left: $paddingLeft;
+ }
+ 
+
+ .node-content-wrapper-active{
+    background-image: url("../../../../assets/images/opened_folder.png");
+    background-repeat: no-repeat;
+    background-size: $folderIconWidth $folderIconHeight;
+    background-position-x: $folderIconPositionX;
+    background-position-y: $folderIconPositionY;
+    width: $nodeWidth;
+}
+

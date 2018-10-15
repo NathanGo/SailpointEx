@@ -1,0 +1,32 @@
+<div *ngIf="data" > 
+       
+        <div class="row ">
+                <div class="col-md-12" >
+                        <ng-table [config]="config"
+                                (tableChanged)="onChangeTable(config)"
+                                (cellClicked)="onCellClick($event)"
+                                [rows]="rows" [columns]="columns">
+                        </ng-table>
+                </div>
+        </div>
+        
+        <div class="row mt-4" *ngIf="length > 10">
+                <div class="col-md-4 mt-1">
+                        <pre >Page: {{page}} / {{numPages}}</pre>
+                </div>
+                <div class="col-md-8 sp-pagination ">
+                        <pagination *ngIf="config.paging"
+                                class="pagination-sm float-md-right"
+                                [(ngModel)]="page"
+                                [totalItems]="length"
+                                [itemsPerPage]="itemsPerPage"
+                                [maxSize]="maxSize"
+                                [boundaryLinks]="true"
+                                [rotate]="false"
+                                (pageChanged)="onChangeTable(config, $event)"
+                                (numPages)="numPages = $event"
+                               >
+                        </pagination>
+                </div>
+        </div>
+</div>

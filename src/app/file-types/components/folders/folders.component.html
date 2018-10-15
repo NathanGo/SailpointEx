@@ -1,0 +1,6 @@
+<div *ngIf="servers" class="mt-5">
+    <sp-tree [nodes]="servers"
+             [options]="options"
+             (nodeSelected)="onNodeSelected($event)">
+            </sp-tree>   
+</div>
